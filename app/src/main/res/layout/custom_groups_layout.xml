@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/group_receiver_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/receiver_messages_layout"
+        android:text="Имя получателя"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        >
+    </TextView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/group_message_profile_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/profile_image"
+        android:layout_below="@+id/group_receiver_name_text_view"
+        >
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/group_receiver_message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_receiver_name_text_view"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="59dp"
+        android:layout_toEndOf="@id/group_message_profile_image"
+        android:background="@drawable/receiver_messages_layout"
+        android:padding="10dp"
+        android:text="Получатель сообщений"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/group_receiver_date_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/receiver_messages_layout"
+        android:layout_below="@+id/group_receiver_message_text"
+        android:text="Дата и Время"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/group_message_sender_image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/group_sender_date_time_text_view"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:scaleType="centerCrop"
+        >
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/sender_image_date_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/group_message_sender_image_view"
+        android:background="@drawable/receiver_messages_layout"
+        android:padding="10dp"
+        android:text="Дата и Время"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/receiver_image_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/group_receiver_date_time_text_view"
+        android:background="@drawable/receiver_messages_layout"
+        android:padding="10dp"
+        android:text="Имя получателя"
+        android:textSize="14sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/group_message_receiver_image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/receiver_image_name_text_view"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        >
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/receiver_image_date_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/receiver_messages_layout"
+        android:layout_below="@+id/group_message_receiver_image_view"
+        android:text="Дата и Время"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/group_sender_message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="@+id/receiver_message_text"
+        android:background="@drawable/sender_messages_layout"
+        android:layout_below="@+id/group_receiver_name_text_view"
+        android:text="Отправитель сообщений"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/group_sender_date_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/receiver_messages_layout"
+        android:layout_below="@+id/group_sender_message_text"
+        android:text="Дата и Время"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        >
+    </TextView>
+
+</RelativeLayout>
